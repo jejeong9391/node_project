@@ -15,15 +15,19 @@
 */
 function* fn(){
     console.log("첫번째 실행")
-    let a = 1;
-    yield 1;
+    const a = 1
+    yield 1
 
     console.log("두번째 실행 | 현재 a값 : "+ a)
-    a++;
-    yield 2;
+    a++
+    yield 2
 
     console.log("세번째 실행 | 현재 a값 : "+a)
-    yield 3;
+    yield 3
     return "끝!"
 }
-const call_fn = fn();
+const z = fn()
+//console.log() // 디버그 콘솔에서 실행할 수 있음. vs코드를 껐다켜면 적용되는데, 이렇게 사용하진 않을텐데....
+console.log(z.next())
+console.log(z.next())
+////// html 올리는것 부터 하고 테스트하자ㅠㅠㅠ

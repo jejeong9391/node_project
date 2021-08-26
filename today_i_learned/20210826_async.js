@@ -6,9 +6,9 @@
 */
 
 //익명함수 사용하기 (일반함수, 화살표함수 = 동일처리)
-const f1= function(s){ console.log(s2.inverse.blue)} 
-const f2= (s)=>{console.log(s3.underline.yellow)}
-f1('nomal function')
-f2('arrow fuction')
+const f1= function(s){ console.log(s.inverse.blue)} 
+const f2= (s)=>{console.log(s.underline.yellow)}
+f3('nomal function')
+f4('arrow fuction')
 
 // 익명함수를 변수의 매개변수로 사용하기
